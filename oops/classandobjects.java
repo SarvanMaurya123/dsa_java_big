@@ -10,6 +10,7 @@ class Student{
     String address;
     float marks;
 
+    //thaking parameter the student
     public Student(
         int id,
         long mobile,
@@ -18,6 +19,7 @@ class Student{
         String address,
         float marks
  ){
+    // this is Constructor:
     this.id=id;
     this.mobile=mobile;
     this.name=name;
@@ -41,7 +43,6 @@ public class classandobjects {
     long mobile=sc.nextInt();
     sc.nextLine(); // clear buffer
 
-
     System.out.println("Enter then Name:");
     String name=sc.nextLine();
 
@@ -50,7 +51,6 @@ public class classandobjects {
 
     System.out.println("Enter the address:");
     String address= sc.nextLine();
-
 
     System.out.println("Enter the marks:");
     float marks=sc.nextFloat();
