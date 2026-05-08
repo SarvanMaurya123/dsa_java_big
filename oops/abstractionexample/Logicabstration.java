@@ -1,6 +1,6 @@
 package oops.abstractionexample;
 
-public class Logicabstration extends Car {
+public class Logicabstration extends Car implements Student{
 
     @Override
     void carRiderName(String Name, int age){
@@ -26,5 +26,19 @@ public class Logicabstration extends Car {
     void carStop(){
         System.out.println("Car are stoped");
     }
-    
+
+     @Override
+    public void studentName(String name, int age){
+        System.out.println("Student Name Is:" +name+ "Ages is:" + age);
+    }
+
+    @Override
+    public void study(){
+        System.out.println("Student Study started");
+    }
+
+    @Override
+    public void notStudy(){
+        System.out.println("Student Not currently study");
+    }
 }
